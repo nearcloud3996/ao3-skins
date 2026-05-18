@@ -1,0 +1,26 @@
+/* set background image */
+#outer {
+  background-image: url("REPLACE_WITH_BACKGROUND_IMAGE_URL");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* hide original header elements then add custom heading */
+#header .logo,
+#header h1 sup {
+  display: none;
+}
+
+#header h1.heading span {
+  display: none;
+}
+
+#header h1.heading a::before {
+  content: "✧ 𝓐𝓻𝓬𝓱𝓲𝓿𝓮 𝓗𝓸𝓶𝓮 ✧";
+  margin-left: 1em;
+  color: #FFB6B9;
+  text-shadow: 0 0 10px #f34094;
+}
+
